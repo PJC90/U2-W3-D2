@@ -85,3 +85,16 @@ if (secondiSalvati && parseInt(secondiSalvati) > 0) {
   // Se non ci sono dati salvati, avvia il contatore dall'inizio.
   contatoreStart()
 }
+
+// metodo più elegante
+const a = sessionStorage.getItem('conteggio')
+
+let i = a ? parseInt(a) : 0
+
+const conta = () => {
+  i += 1
+  document.getElementById('secondi2').innerText = 'Tempo trascorso:' + i
+  sessionStorage.setItem('conteggio', i)
+}
+
+setInterval(conta, 1000)
