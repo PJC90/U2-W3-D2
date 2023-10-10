@@ -70,7 +70,7 @@ const contatoreStart = () => {
 // const contatoreEnd = () => {
 //   clearInterval(timer)
 // }
-//
+// funzione x azzerare il tempo magari collegandoci un button
 
 const secondiSalvati = sessionStorage.getItem('secondi')
 // Verifica se ci sono dati salvati in sessionStorage con chiave 'secondi'
